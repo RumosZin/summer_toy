@@ -1,0 +1,17 @@
+[ Communication with team members ]
+
+1. 개인 개발 시 
+- 충돌을 피하기 위해 개발 전 PULL을 받아주세요.
+- PULL을 받은 후 conflict가 없음을 확인한 후, 개발을 진행합니다.
+- 이때 절대 master branch에는 개발을 하면 안됩니다. master branch는 언제나 stable해야 합니다.
+- 따라서 개인 개발 시 branch를 만든 후 진행해주세요. branch 이름은 본인이 현재 개발하는 기능과 관련된 이름 혹은 진행 단계 이름으로 지어주세요.
+    ex) hotfix_json_package / db_query_update
+- branch를 생성했으면 여러 commit을 통해 개발 히스토리를 남겨주세요. commit message는 히스토리를 표현하는 중요한 수단입니다. 자세하게 작성해주세요.
+    ex) committer: yunjin Kim
+         - feature: DB query update
+         - fix : DB query syntax modify  in <select from where ~>
+- 어느 정도 commit이 쌓이고, 이 branch에서의 개발이 마무리 되어간다면 push를 통해 공유해주세요. 이때 main에 merge하고 push하지 않고, branch 상태 그대로 push합니다. main은 언제나 stable해야하므로, 합칠 경우 팀원 간의 확인 및 conflict 해결이 필요합니다.
+
+2. 기타
+- README.md를 제외한 모든 개발은 main이 아닌 branch에서 이루어져야 합니다.
+- 주석, commit message를 영어로 작성해야 다른 툴에서 깨지지 않고 확인 가능합니다. 꼭 영어로 작성해주세요.
